@@ -8,6 +8,9 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      UI_BASE_URL: https://demo.playwright.dev/todomvc/
+      API_BASE_URL: https://dummyjson.com
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
